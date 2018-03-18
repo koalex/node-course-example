@@ -1,0 +1,209 @@
+@charset "UTF-8"
+
+/*
+  Author: ✰ Konstantin Aleksandrov ✰ https://github.com/koalex
+
+  File Structure :
+    1.  MAIN STYLES
+    	1.1. Sub-name
+*/
+:global(html)
+  height 100%
+:global(body)
+  height 100%
+/************************
+  1. MAIN STYLES
+************************/
+:global(.outdatedbrowser.table)
+  width 100%
+  height 100%
+  & td
+      width 33.333333%
+      text-align center
+      color #fff
+      vertical-align bottom
+      box-shadow none
+      transition box-shadow 0.3s linear 0s
+
+:global(.outdatedbrowser .outdatedbrowser__header)
+    width auto
+    height 30px
+    font-weight bold
+    text-transform uppercase
+    vertical-align middle !important
+    background-color #000
+    box-shadow none !important
+
+:global(.outdatedbrowser.table td .browser-img)
+  display inline-block
+  width 100px
+  height 100px
+  background-image url('./assets/img/outdatedbrowsers_edge.png')
+  background-position-x -999999px
+  background-position-y 0
+  background-repeat-x no-repeat
+  background-repeat-y no-repeat
+  background-size auto 200px
+
+:global(.outdatedbrowser.table.ltew8 td .browser-img)
+  background-image url('./assets/img/outdatedbrowsers_ie.png')
+
+:global(.outdatedbrowser .browser-name)
+  font-weight bold
+  font-size 14px
+
+
+:global(.outdatedbrowser.table td .under)
+  position relative
+  font-weight bold
+  height 50px
+
+:global(.outdatedbrowser.table td .under p)
+  text-transform uppercase
+  font-size 10px
+  line-height 20px
+
+:global(.outdatedbrowser.table td .under-overlay)
+  position: absolute
+  top 0
+  left 0
+  width 100%
+  height 100%
+  background-color #fff
+  opacity 0.2
+
+:global(.outdatedbrowser .download)
+  display inline-block
+  margin-top 20px
+  margin-bottom 15%
+  width 125px
+  height 50px
+  line-height 50px
+  cursor pointer
+  color #fff
+  text-transform uppercase
+  font-size 14px
+  font-weight bold
+  text-decoration none
+  border 3px solid #fff
+  border-radius: 30px
+  &:hover
+    background-color #fff
+
+// CHROME
+:global(.outdatedbrowser td.chrome)
+  background #f2b635
+  &:hover
+    box-shadow inset 0 0 200px lightness(#f2b635, 40%)
+    transition box-shadow 0.3s linear 0s
+
+:global(.outdatedbrowser.table td.chrome .download:hover)
+  color #f2b635
+
+
+:global(.outdatedbrowser.table td.chrome .browser-img)
+  background-position-x 0
+
+
+// FIREFOX
+:global(.outdatedbrowser td.firefox)
+  background #f19a2a
+  &:hover
+    box-shadow inset 0 0 200px lightness(#f19a2a, 40%)
+    transition box-shadow 0.3s linear 0s
+
+:global(.outdatedbrowser.table td.firefox .download:hover)
+  color #f19a2a
+
+:global(.outdatedbrowser.table td.firefox .browser-img)
+  background-position-x -100px
+
+
+// EDGE
+:global(.outdatedbrowser.table td.edge)
+  background #00caff
+  &:hover
+    box-shadow inset 0 0 200px lightness(#00caff, 35%)
+    transition box-shadow 0.3s linear 0s
+
+:global(.outdatedbrowser.table td.edge .download:hover)
+  color #00caff
+
+:global(.outdatedbrowser.table td.edge .browser-img)
+  background-position-x -200px
+
+
+// SAFARI
+:global(.outdatedbrowser.table td.safari)
+  background #00a0e6
+  &:hover
+    box-shadow inset 0 0 200px lightness(#00a0e6, 35%)
+    transition box-shadow 0.3s linear 0s
+
+:global(.outdatedbrowser.table td.safari .download:hover)
+  color #00a0e6
+
+:global(.outdatedbrowser.table td.safari .browser-img)
+  background-position-x -300px
+
+
+// YANDEX
+:global(.outdatedbrowser.table td.yandex)
+  background saturation(#f25648, 200%)
+  &:hover
+    box-shadow inset 0 0 200px lightness(saturation(#f25648, 200%), 35%)
+    transition box-shadow 0.3s linear 0s
+
+:global(.table td.yandex .download:hover)
+  color saturation(#f25648, 200%)
+
+:global(.outdatedbrowser.table td.yandex .browser-img)
+  background-position-x -500px
+
+
+// OPERA
+:global(.table td.opera)
+  background saturation(#f25648, 75%)
+  &:hover
+    box-shadow inset 0 0 200px lightness(saturation(#f25648, 75%), 35%)
+    transition box-shadow 0.3s linear 0s
+
+:global(.table td.opera .download:hover)
+  color saturation(#f25648, 75%)
+
+:global(.table td.opera .browser-img)
+  background-position-x -400px
+
+:global(.systems-list)
+  position absolute
+  bottom 0
+  left 0
+  width 100%
+
+:global(.systems-list-item)
+  display inline-block
+  margin-right 5px
+
+:global(.systems-list-item > i)
+  display inline-block
+  width 25px
+  height 25px
+  background-image url('./assets/img/outdatedbrowsers_systems.png')
+  background-position-x -999999px
+  background-position-y 0
+  background-repeat-x no-repeat
+  background-repeat-y no-repeat
+  background-size auto 25px
+
+:global(.systems-list-item > i.windows)
+  background-position-x 0
+
+:global(.systems-list-item > i.apple)
+  background-position-x -25px
+
+:global(.systems-list-item > i.linux)
+  background-position-x -50px
+
+
+:global(.table td:hover .browser-img)
+  background-position-y -100px

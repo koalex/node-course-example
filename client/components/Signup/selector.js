@@ -1,0 +1,1 @@
+export const getSignupForm = state => state.get('signup');

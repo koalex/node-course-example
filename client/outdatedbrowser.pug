@@ -1,0 +1,86 @@
+- var oldWin = userAgent.isWindows && (userAgent.os.toUpperCase() == 'WINDOWS XP' || userAgent.os.toUpperCase() == 'WINDOWS 7' || userAgent.os.toUpperCase() == 'WINDOWS 8.1' || userAgent.os.toUpperCase() == 'WINDOWS 8')
+
+table.outdatedbrowser.table(class=oldWin ? 'ltew8' : '')
+    tr
+        td.outdatedbrowser__header(colspan="3")
+            h1 #{i18n.__('outdatedbrowser.HEADER')}
+    tr
+        td.chrome
+            i.browser-img
+            h2.browser-name GOOGLE CHROME
+            a.download(href="https://www.google.com/chrome/browser/desktop" target="_blank") #{i18n.__('outdatedbrowser.DOWNLOAD')}
+            .under
+                p #{i18n.__('outdatedbrowser.AVAILABLE')}
+                .under-overlay
+                ul.systems-list
+                    li.systems-list-item
+                        i.windows(title="WINDOWS")
+                    li.systems-list-item
+                        i.apple(title="MAC OS")
+                    li.systems-list-item
+                        i.linux(title="LINUX")
+
+        td.firefox
+            i.browser-img
+            h2.browser-name MOZILLA FIREFOX
+            a.download(href="http://www.mozilla.org/firefox/new" target="_blank") #{i18n.__('outdatedbrowser.DOWNLOAD')}
+            .under
+                p #{i18n.__('outdatedbrowser.AVAILABLE')}
+                .under-overlay
+                ul.systems-list
+                    li.systems-list-item
+                        i.windows(title="WINDOWS")
+                    li.systems-list-item
+                        i.apple(title="MAC OS")
+                    li.systems-list-item
+                        i.linux(title="LINUX")
+        td.edge
+            i.browser-img
+            h2.browser-name #{oldWin ? 'INTERNET EXPLORER' : 'MICROSOFT EDGE'}
+            a.download(href="https://www.microsoft.com/download/details.aspx?id=48126" target="_blank") #{i18n.__('outdatedbrowser.DOWNLOAD')}
+            .under
+                p #{i18n.__('outdatedbrowser.AVAILABLE')}
+                .under-overlay
+                ul.systems-list
+                    li.systems-list-item
+                        i.windows(title=oldWin ? 'WINDOWS 7 и WINDOWS 8' : 'WINDOWS >= 10')
+    tr
+        td.safari
+            i.browser-img
+            h2.browser-name APPLE SAFARI
+            a.download(href="https://support.apple.com/downloads/safari" target="_blank") #{i18n.__('outdatedbrowser.DOWNLOAD')}
+            .under
+                p #{i18n.__('outdatedbrowser.AVAILABLE')}
+                .under-overlay
+                ul.systems-list
+                    li.systems-list-item
+                        i.apple(title="MAC OS")
+
+        td.yandex
+            i.browser-img
+            h2.browser-name YANDEX BROWSER
+            a.download(href="https://browser.yandex.ru/desktop/main" target="_blank") #{i18n.__('outdatedbrowser.DOWNLOAD')}
+            .under
+                p #{i18n.__('outdatedbrowser.AVAILABLE')}
+                .under-overlay
+                ul.systems-list
+                    li.systems-list-item
+                        i.windows(title="WINDOWS")
+                    li.systems-list-item
+                        i.apple(title="MAC OS")
+                    li.systems-list-item
+                        i.linux(title="LINUX")
+        td.opera
+            i.browser-img
+            h2.browser-name OPERA
+            a.download(href="http://www.opera.com" target="_blank") #{i18n.__('outdatedbrowser.DOWNLOAD')}
+            .under
+                p #{i18n.__('outdatedbrowser.AVAILABLE')}
+                .under-overlay
+                ul.systems-list
+                    li.systems-list-item
+                        i.windows(title="WINDOWS")
+                    li.systems-list-item
+                        i.apple(title="MAC OS")
+                    li.systems-list-item
+                        i.linux(title="LINUX")
