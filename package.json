@@ -16,7 +16,9 @@
     "url": "https://github.com/koalex/node-course-example/issues"
   },
   "homepage": "https://github.com/koalex/node-course-example",
-  "keywords": ["node.js"],
+  "keywords": [
+    "node.js"
+  ],
   "engines": {
     "node": ">=8.4.0",
     "npm": ">=5",
@@ -38,9 +40,6 @@
     "ncu:update": "ncu --upgrade",
     "test": "PORT=2999 mocha ./www --recursive",
     "cover": "PORT=2999 nyc --reporter=html --reporter=lcov --reporter=text --reporter=text-summary --require babel-register --require babel-polyfill --report-dir coverage mocha ./handlers --recursive",
-    "postmerge": "yarn test",
-    "precommit": "yarn test",
-    "prepush": "yarn test",
     "tdd": "",
     "redis:development": "redis-server ./config/redis.development.conf",
     "redis:production": "redis-server ./config/redis.conf",

@@ -21,7 +21,12 @@
   npm run redis:production
   ```
 
-4. Go to [localhost:3000/demo](http://localhost:3000)
+4. Run pm2:
+  ```bash
+  npm start
+  ```
+
+5. Go to [localhost:3000/demo](http://localhost:3000)
 
 ## Development
 
