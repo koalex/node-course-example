@@ -40,6 +40,11 @@
   npm run redis:development
   ```
 
+4. Run dev:
+  ```bash
+  npm run dev
+  ```
+
 ## Build
 
   ```bash
